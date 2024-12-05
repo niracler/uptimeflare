@@ -57,9 +57,9 @@ const workerConfig = {
       id: 'qbittorrent_monitor',
       name: 'Qbittorrent',
       method: 'GET',
-      target: 'https://qbittorrent.niracler.com',
+      target: 'https://qb.niracler.com',
       tooltip: 'Niracler\'s Qbittorrent',
-      statusPageLink: 'https://qbittorrent.niracler.com',
+      statusPageLink: 'https://qb.niracler.com',
       headers: {
         'User-Agent': 'Uptimeflare',
       },
