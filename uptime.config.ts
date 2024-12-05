@@ -22,6 +22,11 @@ const workerConfig = {
       name: 'n8n',
       method: 'GET',
       target: 'https://n8n.niracler.com',
+      tooltip: 'Niracler\'s n8n, auto sync douban pinboard to telegram',
+      statusPageLink: 'https://n8n.niracler.com',
+      headers: {
+        'User-Agent': 'Uptimeflare',
+      },
       expectedCodes: [200]
     },
     {
@@ -29,6 +34,11 @@ const workerConfig = {
       name: 'AutoBangumi',
       method: 'GET',
       target: 'https://autobangumi.niracler.com',
+      tooltip: 'Niracler\'s AutoBangumi, auto download anime through Mikan RSS',
+      statusPageLink: 'https://autobangumi.niracler.com',
+      headers: {
+        'User-Agent': 'Uptimeflare',
+      },
       expectedCodes: [200]
     },
     {
@@ -36,6 +46,23 @@ const workerConfig = {
       name: 'Animashin',
       method: 'GET',
       target: 'https://animashin.niracler.com',
+      tooltip: 'Niracler\'s Animashin, auto downloader anime through RSS',
+      statusPageLink: 'https://animashin.niracler.com',
+      headers: {
+        'User-Agent': 'Uptimeflare',
+      },
+      expectedCodes: [200]
+    },
+    {
+      id: 'qbittorrent_monitor',
+      name: 'Qbittorrent',
+      method: 'GET',
+      target: 'https://qbittorrent.niracler.com',
+      tooltip: 'Niracler\'s Qbittorrent',
+      statusPageLink: 'https://qbittorrent.niracler.com',
+      headers: {
+        'User-Agent': 'Uptimeflare',
+      },
       expectedCodes: [200]
     }
     // Example TCP Monitor
